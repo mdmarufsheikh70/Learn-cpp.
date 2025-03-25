@@ -8,7 +8,7 @@ protected:
     string name;
     int employeeId;
 
-    // Nested class for personal information
+    
     class PersonalInfo {
     public:
         string address;
@@ -44,16 +44,15 @@ class Accounting : public Employee {
 public:
     Accounting(string n, int id) : Employee(n, id) {}
 
-    // Accounting class can only access public members of Employee
     void displaySalaryInfo() {
-        cout << "Salary: " << calculateSalary() << endl; // Assuming a calculateSalary() function
+        cout << "Salary: " << calculateSalary() << endl; 
     }
 
 private:
-    // Can't directly access personalInfo here
+    
     int calculateSalary() {
-        // Logic to calculate salary based on employee's role, experience, etc.
-        return 50000; // For example
+        
+        return 50000; 
     }
 };
 
@@ -65,7 +64,7 @@ int main() {
     Accounting accounting("Jane Smith", 456);
 
     hr.displayEmployeeInfo();
-    hr.displayPersonalInfo(); // HR can access personal info
+    hr.displayPersonalInfo(); 
 
     accounting.displayEmployeeInfo();
     // accounting.displayPersonalInfo(); // Accounting cannot directly access personal info
