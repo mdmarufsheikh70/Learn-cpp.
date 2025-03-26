@@ -45,7 +45,7 @@ class b:public prictice{
 
 int main(){
     prictice ob1;
-    b obj2;
     a obj3;
+    b obj2;
     return 0;
 }
