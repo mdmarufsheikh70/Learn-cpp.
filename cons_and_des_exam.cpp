@@ -4,7 +4,7 @@ class prictice
 {
 public:
     prictice(){
-        cout<<"go1";
+        cout << "go1";
         cout<<endl;
         
     }
