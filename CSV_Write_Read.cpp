@@ -20,6 +20,6 @@ int main() {
     } else {
         cout << "Cannot open file";
     }
-
+    
     return 0;
 }
