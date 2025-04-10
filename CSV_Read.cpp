@@ -7,7 +7,7 @@ int main() {
     ifstream file("data.csv");
     string line;
     if (file.is_open()) {
-        while (getline(file, line)) {
+        while (getline(file, line)){
             cout << line << endl;
         }
         file.close();
